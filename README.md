@@ -28,6 +28,7 @@ You can view the live version of my portfolio here: [Your GitHub Pages Link or C
 ├── style.css     # Custom styling and animations
 └── README.md     # Project documentation
 └── LICENSE.md    # LICENCE
+```
 
 ### 📬 Contact Me
 - LinkedIn: [linkedin.com/in/zaferbayrakci](https://www.linkedin.com/in/zaferbayrakci/)
