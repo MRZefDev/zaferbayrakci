@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zafer BAYRAKCI | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert("İçerik koruma sistemi geliştiriliyor.");
+    });
+    document.onkeydown = function(e) {
+        if (e.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0))) {
+            return false;
+        }
+    };
+        /*
+        document.addEventListener('keyup', (e) => {
+            if (e.key == 'PrintScreen') {
+                navigator.clipboard.writeText('');
+                alert('Ekran görüntüsü alma yetkiniz bulunmamaktadır.');
+            }
+        });
+        */
+    document.onselectstart = function() { return false; };
+
+</script>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <div class="container">
+        <main class="content">
+            <section id="about" class="section">
+                <span class="section-tag">// 01. ÖZET</span>
+                <p class="intro-text">
+                    Teknolojiye, yazılım geliştirmeye ve siber güvenliğe ilgi duyarım. <span class="highlight">Zafer Ege BAYRAKCI</span> olarak, amacım, güçlü yazılım ve güvenlik temellerine sahip bir bilişim uzmanı olmak..
+                </p>
+            </section>
+
+            <section id="experience" class="section">
+                <span class="section-tag">// 02. DENEYİM</span>
+
+                <div class="work-card">
+                    <div class="card-glow"></div>
+                    <span class="work-date">2025 Ekim — Günümüz </span>
+                    <div class="work-content">
+                        <h3>KBÜ - KARABÜK ÜNİVERSİTESİ SİBER GÜVENLİK TOPLULUĞU | YÖNETİM KADROSU</h3>
+                        <p>...</p>
+                        <div class="tags">
+                            <span>Siber Güvenlik</span> <span>Linux</span> <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="card-glow"></div>
+                    <span class="work-date">2025 Ekim — Günümüz </span>
+                    <div class="work-content">
+                        <h3>ORIONA CREATİVE | WEB DEVELOPER</h3>
+                        <p>Modern web teknolojileri kullanarak kullanıcı odaklı ve yüksek performanslı dijital çözümler geliştiriyorum. UI/UX prensiplerine uygun, ölçeklenebilir frontend mimarileri inşa ediyor ve marka kimliğine uygun özel web deneyimleri tasarlıyorum.</p>
+                        <div class="tags">
+                            <span>WordPress</span> <span>PHP</span> <span>Elementor/WP-Bakery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="card-glow"></div>
+                    <span class="work-date">2025 Haziran — 2025 Temmuz </span>
+                    <div class="work-content">
+                        <h3>MENTOR INSAN KAYNAKLARI | TAKIM LIDERI</h3>
+                        <p>Operasyonel süreçlerin denetimi ve ekip koordinasyonu. Yeni personellerin eğitim süreçlerini yapılandırarak verimlilik analizi ve performans takibi süreçlerini yönettim.</p>
+                        <div class="tags">
+                            <span>Excel</span> <span>Operasyonel Yönetim</span> <span>Veri Yönetimi</span> <span>Puantaj Takibi</span> <span>Ekip Koordinasyonu</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="card-glow"></div>
+                    <span class="work-date">2024 Eylül — 2025 Haziran </span>
+                    <div class="work-content">
+                        <h3>MENTOR INSAN KAYNAKLARI | STAJYER TAKIM LIDERI</h3>
+                        <p>Yeni başlayan personellerin adaptasyon (onboarding) süreçlerini yöneterek rehberlik ettim. Personel dokümantasyonu, puantaj sistemlerinin takibi ve veri girişi süreçlerini titizlikle yürüterek operasyonel düzeni sağladım.</p>
+                        <div class="tags">
+                            <span>Excel</span> <span>Onboarding</span> <span>Veri Yönetimi</span> <span>Puantaj Takibi</span> <span>Dokümantasyon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="certifications" class="section">
+                <span class="section-tag">// 03. SERTİFİKALAR</span>
+                <div class="cert-container">
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-award cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>Getting Started with Cybersecurity</h3>
+                                    <p>IBM SkillsBuild / 2026</p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-award cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>İŞLETİM SİSTEMLERİNE GİRİŞ</h3>
+                                    <p>BTK AKADEMİ / 2022</p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-shield-alt cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>SIFIRDAN İLERİ SEVİYE PYTHON PROGRAMLAMA</h3>
+                                    <p>BTK AKADEMİ / 2022</p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-shield-alt cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>HTML5 İLE WEB GELİŞTİRME</h3>
+                                    <p>BTK AKADEMİ / 2023</p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-shield-alt cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>ÇİZGİ İZLEYEN ROBOT YARIŞMASI // 2.lik</h3>
+                                    <p>GEBZE TEKNİ ÜNİVERSİTESİ / 2024</p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="study" class="section">
+                <span class="section-tag">// 04. EĞİTİM</span>
+                <div class="cert-container">
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-award cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>KARABUK UNİVERSİTESİ</h3>
+                                    <p>Ön Lisans, Bilişim Güvenliği Teknolojisi</p>
+                                    <p>2025 Eylül — Günümüz </p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+
+                    <div class="cert-box">
+                        <div class="cert-content">
+                            <div class="cert-main">
+                                <i class="fas fa-award cert-icon"></i>
+                                <div class="cert-text">
+                                    <h3>DENİZYILDIZLARI MESLEKİ VE TEKNİK ANADOLU LİSESİ</h3>
+                                    <p>Bilişim Teknolojileri Alanı - Yazılım Geliştirme</p>
+                                    <p>2021 Eylül — 2025 Haziran </p>
+                                </div>
+                            </div>
+                            <a href="#" class="cert-arrow"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cert-hover-bg"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="contact-info" class="section">
+                <span class="section-tag">// 05. İLETİŞİM</span>
+                <div class="cert-container">
+            
+                    <a href="https://www.linkedin.com/in/zaferbayrakci/" target="_blank" style="text-decoration: none;">
+                        <div class="cert-box">
+                            <div class="cert-content">
+                                <div class="cert-main">
+                                    <i class="fab fa-linkedin cert-icon"></i>
+                                    <div class="cert-text">
+                                        <h3>LinkedIn</h3>
+                                        <p>Profesyonel Ağ & Bağlantı</p>
+                                    </div>
+                                </div>
+                                <span class="cert-arrow"><i class="fas fa-external-link-alt"></i></span>
+                            </div>
+                            <div class="cert-hover-bg"></div>
+                        </div>
+                    </a>
+            
+                    <a href="https://github.com/MRZefDev" target="_blank" style="text-decoration: none;">
+                        <div class="cert-box">
+                            <div class="cert-content">
+                                <div class="cert-main">
+                                    <i class="fab fa-github cert-icon"></i>
+                                    <div class="cert-text">
+                                        <h3>GitHub</h3>
+                                        <p>Projeler & Kaynak Kodlar</p>
+                                    </div>
+                                </div>
+                                <span class="cert-arrow"><i class="fas fa-external-link-alt"></i></span>
+                            </div>
+                            <div class="cert-hover-bg"></div>
+                        </div>
+                    </a>
+            
+                    <a href="mailto:bzaferege@gmail.com" style="text-decoration: none;">
+                        <div class="cert-box">
+                            <div class="cert-content">
+                                <div class="cert-main">
+                                    <i class="fas fa-envelope cert-icon"></i>
+                                    <div class="cert-text">
+                                        <h3>E-Posta</h3>
+                                        <p>bzaferege@gmail.com</p>
+                                    </div>
+                                </div>
+                                <span class="cert-arrow"><i class="fas fa-paper-plane"></i></span>
+                            </div>
+                            <div class="cert-hover-bg"></div>
+                        </div>
+                    </a>
+            
+                </div>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="brand">
+                    <h1 class="main-name">ZAFER<br>EGE<br>BAYRAKCI</h1>
+                    <div class="brand-divider"></div>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about" class="nav-link">HAKKIMDA <span class="line"></span></a></li>
+                        <li><a href="#experience"class="nav-link active">DENEYİM <span class="line"></span></a></li>
+                        <li><a href="#certifications" class="nav-link">SERTİFİKALAR <span class="line"></span></a></li>
+                        <li><a href="#study" class="nav-link">EĞİTİM <span class="line"></span></a></li>
+                        <li><a href="#contact-info" class="nav-link">İLETİŞİM <span class="line"></span></a></li>
+                        <!--<li><a href="#contact" class="nav-link">İLETİŞİM <span class="line"></span></a></li>-->
+                    </ul>
+                </nav>
+
+                <div class="sidebar-bottom">
+                    <div class="social-links">
+                        <a href=https://github.com/MRZefDev><i class="fab fa-github"></i></a>
+                        <a href=https://www.linkedin.com/in/zaferbayrakci/><i class="fab fa-linkedin-in"></i></a>
+                        <a href=mailto:bzaferege@gmail.com/><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="footer-copy">© 2025 ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
