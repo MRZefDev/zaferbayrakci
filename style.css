@@ -286,3 +286,138 @@ body {
 }
 
 
+/* ===========================
+   MOBILE RESPONSIVE FIXES
+   =========================== */
+
+@media (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-left: none;
+        border-bottom: 1px solid var(--border);
+        padding: 40px 30px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 80px 40px;
+    }
+
+    .sidebar-content {
+        gap: 40px;
+    }
+
+    .main-name {
+        font-size: 2.8rem;
+        letter-spacing: -2px;
+    }
+}
+
+/* ===========================
+   TABLET & MOBILE
+   =========================== */
+
+@media (max-width: 768px) {
+
+    .content {
+        padding: 60px 25px;
+    }
+
+    .section {
+        margin-bottom: 100px;
+    }
+
+    .intro-text {
+        font-size: 1.4rem;
+    }
+
+    .work-card {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px;
+    }
+
+    .work-date {
+        font-size: 0.75rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cert-arrow {
+        align-self: flex-end;
+    }
+
+    .main-name {
+        font-size: 2.4rem;
+        line-height: 1;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* ===========================
+   SMALL PHONES
+   =========================== */
+
+@media (max-width: 480px) {
+
+    .content {
+        padding: 50px 18px;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+
+    .section-tag {
+        font-size: 0.6rem;
+        letter-spacing: 3px;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+
+    .project-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .main-name {
+        font-size: 2rem;
+    }
+
+    .sidebar {
+        padding: 30px 20px;
+    }
+
+    .tags span {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+    }
+
+    .footer-copy {
+        text-align: center;
+    }
+}
+
