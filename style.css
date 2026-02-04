@@ -110,7 +110,15 @@ body {
     display: block;
     width: 100%;
 }
-.main-nav ul { list-style: none; }
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    line-height: 1;
+}
 .nav-link {
     text-decoration: none;
     color: var(--metal);
@@ -225,20 +233,15 @@ body {
 }
 
 .project-card {
-    background: rgba(255,255,255,0.06);
-    -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px);
-
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 35px;
-    position: relative;
-    overflow: hidden;
-
-    box-shadow: 0 12px 35px rgba(0,0,0,0.45);
-    transition: 0.4s ease;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .project-card:hover {
     border-color: var(--gold);
@@ -285,6 +288,111 @@ body {
     overflow: hidden;
 }
 
+/* ===========================
+   ACTIVITIES / TIMELINE
+   =========================== */
+
+.activity-timeline {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.activity-timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+.activity-item {
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+
+.activity-date {
+    min-width: 60px;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.activity-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.4s;
+    position: relative;
+    width: 100%;
+}
+
+.activity-card::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 35px;
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--gold-dim);
+}
+
+.activity-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-6px);
+    background: rgba(212, 175, 55, 0.03);
+}
+
+.activity-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.activity-icon {
+    font-size: 1.6rem;
+    color: var(--gold);
+}
+
+.activity-card h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.activity-card p {
+    max-width: 95%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .activity-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .activity-date {
+        text-align: left;
+    }
+
+    .activity-timeline::before {
+        left: 5px;
+    }
+
+    .activity-card::before {
+        left: -21px;
+    }
+}
 
 /* ===========================
    MOBILE RESPONSIVE FIXES
@@ -420,4 +528,3 @@ body {
         text-align: center;
     }
 }
-
